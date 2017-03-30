@@ -17,7 +17,7 @@ from django.views.decorators.csrf import csrf_exempt
 class MultiUploadAdmin(admin.ModelAdmin):
     class Media:
         js = (
-            'jquery/jquery.1.8.0.min.js',
+           # 'jquery/jquery.1.8.0.min.js',
             'jquery/jquery_fix_csrf.js',
             'jquery/jquery.ui.widget.js',
             'jquery/tmpl.min.js',
@@ -29,7 +29,8 @@ class MultiUploadAdmin(admin.ModelAdmin):
             'jquery/jquery.fileupload-ui.js',
         )
         css = {
-            'all': ['css/jquery-ui.css',
+            'all': [
+                #'css/jquery-ui.css',
                     'css/jquery.fileupload-ui.css',
                     'css/multiupload.css',
                     ],

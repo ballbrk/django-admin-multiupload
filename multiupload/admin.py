@@ -17,22 +17,22 @@ from django.views.decorators.csrf import csrf_exempt
 class MultiUploadAdmin(admin.ModelAdmin):
     class Media:
         js = (
-           # 'jquery/jquery.1.8.0.min.js',
-            'jquery/jquery_fix_csrf.js',
-            'jquery/jquery.ui.widget.js',
-            'jquery/tmpl.min.js',
-            'jquery/canvas-to-blob.min.js',
-            'jquery/load-image.min.js',
-            'jquery/jquery.iframe-transport.js',
-            'jquery/jquery.fileupload.js',
-            'jquery/jquery.fileupload-fp.js',
-            'jquery/jquery.fileupload-ui.js',
+           # 'multiupload/jquery/jquery.1.8.0.min.js',
+            'multiupload/jquery/jquery_fix_csrf.js',
+            'multiupload/jquery/jquery.ui.widget.js',
+            'multiupload/jquery/tmpl.min.js',
+            'multiupload/jquery/canvas-to-blob.min.js',
+            'multiupload/jquery/load-image.min.js',
+            'multiupload/jquery/jquery.iframe-transport.js',
+            'multiupload/jquery/jquery.fileupload.js',
+            'multiupload/jquery/jquery.fileupload-fp.js',
+            'multiupload/jquery/jquery.fileupload-ui.js',
         )
         css = {
             'all': [
                 #'css/jquery-ui.css',
-                    'css/jquery.fileupload-ui.css',
-                    'css/multiupload.css',
+                    'multiupload/css/jquery.fileupload-ui.css',
+                    'multiupload/css/multiupload.css',
                     ],
         }
     change_form_template = 'multiupload/change_form.html'

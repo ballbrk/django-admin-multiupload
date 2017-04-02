@@ -18,23 +18,32 @@ class MultiUploadAdmin(admin.ModelAdmin):
     class Media:
         js = (
            # 'multiupload/jquery/jquery.1.8.0.min.js',
+            'multiupload/bootstrap/js/bootstrap.min.js',
             'multiupload/jquery/jquery_fix_csrf.js',
             'multiupload/jquery/jquery.ui.widget.js',
+            'multiupload/jquery/bootstrap.min.js',
             'multiupload/jquery/tmpl.min.js',
+            'multiupload/jquery/load-image.min.js',
             'multiupload/jquery/canvas-to-blob.min.js',
+            'multiupload/jquery/bootstrap-image-gallery.min.js',
             'multiupload/jquery/load-image.min.js',
             'multiupload/jquery/jquery.iframe-transport.js',
             'multiupload/jquery/jquery.fileupload.js',
             'multiupload/jquery/jquery.fileupload-fp.js',
             'multiupload/jquery/jquery.fileupload-ui.js',
         )
+
         css = {
             'all': [
                 #'css/jquery-ui.css',
+                'admin/css/forms.css',
                     'multiupload/css/jquery.fileupload-ui.css',
                     'multiupload/css/multiupload.css',
                     ],
         }
+
+
+
     change_form_template = 'multiupload/change_form.html'
     change_list_template = 'multiupload/change_list.html'
     multiupload_template = 'multiupload/upload.html'
